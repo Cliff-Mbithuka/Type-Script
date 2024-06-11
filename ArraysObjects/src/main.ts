@@ -34,9 +34,9 @@ const exampleObj = {
 exampleObj.prop2 = false;
 
 
-type Guitarist = {
+interface Guitarist {
     name: string,
-    active: boolean,
+    active?: boolean,
     albums: (string | number)[]
 }
 
@@ -45,3 +45,19 @@ let evh : Guitarist = {
     active: false,
     albums: [1984, 5150, 'ou812']
 }
+
+
+let jp : Guitarist = {
+    name: 'Jimmie',
+    // active: true,
+    albums: ['I', 'II', 'IV']
+}
+
+evh = jp
+
+
+const greetGuitarist = (guitarist: Guitarist) => {
+return  `Hello ${guitarist.name}!`
+}
+
+console.log(greetGuitarist(jp));
