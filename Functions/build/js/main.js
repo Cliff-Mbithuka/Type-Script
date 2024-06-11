@@ -1,8 +1,24 @@
 "use strict";
-let stringArr = ['one', 'hey', 'Dave'];
-let guitars = ['Strat', 'Les Paul', 5150];
-let mixedData = ['EVH', 1984, true];
-stringArr[0] = 'John';
-stringArr.push('hey');
-guitars[0] = 1984;
-guitars.unshift('jim');
+//Literal Types
+let myName;
+let userName;
+userName = "Any";
+//functions
+const add = (a, b) => {
+    return a + b;
+};
+const logMsg = (message) => {
+    console.log(message);
+};
+logMsg("Hello!");
+logMsg(add(2, 3));
+let subtract = function (c, d) {
+    return c - d;
+};
+// interface mathFunction {
+//   (a: number, b: number): number;
+// }
+let multiply = function (c, d) {
+    return c * d;
+};
+logMsg(multiply(2, 2));
