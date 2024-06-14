@@ -11,13 +11,3 @@ const addOrConcat = (a, b, c) => {
     return "" + a + b;
 };
 let myVal = addOrConcat(2, 2, "concat");
-// Be careful Type script sees no problem but a string is returned
-let nextVal = addOrConcat(2, 2, "concat");
-// 10 as string
-10;
-//The DOM
-const img = document.querySelector('img');
-const myImg = document.getElementById('#img');
-const nextImg = document.getElementById('#img');
-img.src;
-myImg.src;
