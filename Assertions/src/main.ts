@@ -22,7 +22,7 @@ const addOrConcat = (
 let myVal: string = addOrConcat(2, 2,"concat") as string;
 
 
-// Be careful Type script sees no problem but a string is returned
+// Be careful Type script sees no problem - but a string is returned
 let nextVal: number = addOrConcat(2, 2,"concat") as number;
 
 // 10 as string

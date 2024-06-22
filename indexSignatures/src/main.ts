@@ -17,8 +17,8 @@ const todaysTransactions: TransactionObj = {
     Job: 50,
 }
 
-console.log(todaysTransactions.Pizza)
-console.log(todaysTransactions['Pizza'])
+console.log(todaysTransactions.Pizza) //-10
+console.log(todaysTransactions['Pizza']) //-10
 
 let prop: string = 'Pizza'
 console.log(todaysTransactions[prop])

@@ -69,6 +69,8 @@ const total = (a: number,...nums: number[]): number => {
 
 logMsg(total(10, 2, 3));
 
+
+// Never type 
 const createError = (errMsg: string) => {
   throw new Error(errMsg)
 }
@@ -90,7 +92,7 @@ const isNumber = (value: any): boolean => {
 //use of the never type
 const numberOrString  = (value: number | string ): string =>{
   if(typeof value === 'string') return 'string'
-  if(typeof value === 'number') return 'number'
+  if(isNumber(value)) return 'number'
   return createError('this should never happen!')
 }
 
